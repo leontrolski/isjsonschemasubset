@@ -1,0 +1,22 @@
+{
+    "$defs": {
+        "BC": {
+            "enum": [
+                "b",
+                "c"
+            ],
+            "title": "BC",
+            "type": "string"
+        }
+    },
+    "properties": {
+        "choices": {
+            "$ref": "#/$defs/BC"
+        }
+    },
+    "required": [
+        "choices"
+    ],
+    "title": "EnumBC",
+    "type": "object"
+}

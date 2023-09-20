@@ -1,0 +1,41 @@
+{
+    "$defs": {
+        "IntOrStr": {
+            "properties": {
+                "a": {
+                    "anyOf": [
+                        {
+                            "type": "integer"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "title": "A"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "IntOrStr",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "b": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/IntOrStr"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        }
+    },
+    "required": [
+        "b"
+    ],
+    "title": "IntOrStrNested",
+    "type": "object"
+}

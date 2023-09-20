@@ -1,0 +1,35 @@
+[project]
+name = "isjsonschemasubset"
+version = "0.0.1"
+description = "Check one JSON schema is a subset of another"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+keywords = ["JSONSchema", "pydantic"]
+authors = [
+  {name = "Oliver Russell", email = "ojhrussell@gmail.com"},
+]
+maintainers = [
+  {name = "Oliver Russell", email = "ojhrussell@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python",
+]
+
+dependencies = [
+  "pydantic>=2.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2.2",
+  "autoflake>=2.0.2",
+  "black>=23.1.0",
+  "mypy",
+]
+
+[project.urls]
+homepage = "https://leontrolski.github.io/"
+
+[project.scripts]
+# spam-cli = "isjsonschemasubset:main_cli"

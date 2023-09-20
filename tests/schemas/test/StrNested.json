@@ -1,0 +1,27 @@
+{
+    "$defs": {
+        "StrOnly": {
+            "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "StrOnly",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "b": {
+            "$ref": "#/$defs/StrOnly"
+        }
+    },
+    "required": [
+        "b"
+    ],
+    "title": "StrNested",
+    "type": "object"
+}

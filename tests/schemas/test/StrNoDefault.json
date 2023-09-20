@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "a": {
+            "title": "A",
+            "type": "string"
+        },
+        "b": {
+            "title": "B",
+            "type": "number"
+        }
+    },
+    "required": [
+        "a",
+        "b"
+    ],
+    "title": "StrNoDefault",
+    "type": "object"
+}

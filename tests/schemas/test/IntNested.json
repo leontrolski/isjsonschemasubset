@@ -1,0 +1,27 @@
+{
+    "$defs": {
+        "IntOnly": {
+            "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "IntOnly",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "b": {
+            "$ref": "#/$defs/IntOnly"
+        }
+    },
+    "required": [
+        "b"
+    ],
+    "title": "IntNested",
+    "type": "object"
+}

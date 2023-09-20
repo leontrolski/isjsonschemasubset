@@ -1,0 +1,64 @@
+{
+    "$defs": {
+        "X": {
+            "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "X",
+            "type": "object"
+        },
+        "Y": {
+            "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "Y",
+            "type": "object"
+        },
+        "Z": {
+            "properties": {
+                "a": {
+                    "title": "A",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "Z",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "choices": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/X"
+                },
+                {
+                    "$ref": "#/$defs/Y"
+                },
+                {
+                    "$ref": "#/$defs/Z"
+                }
+            ],
+            "title": "Choices"
+        }
+    },
+    "required": [
+        "choices"
+    ],
+    "title": "UnionXYZ",
+    "type": "object"
+}

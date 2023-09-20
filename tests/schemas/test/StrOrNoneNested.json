@@ -1,0 +1,41 @@
+{
+    "$defs": {
+        "StrOrNone": {
+            "properties": {
+                "a": {
+                    "anyOf": [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "null"
+                        }
+                    ],
+                    "title": "A"
+                }
+            },
+            "required": [
+                "a"
+            ],
+            "title": "StrOrNone",
+            "type": "object"
+        }
+    },
+    "properties": {
+        "b": {
+            "anyOf": [
+                {
+                    "$ref": "#/$defs/StrOrNone"
+                },
+                {
+                    "type": "null"
+                }
+            ]
+        }
+    },
+    "required": [
+        "b"
+    ],
+    "title": "StrOrNoneNested",
+    "type": "object"
+}

@@ -1,0 +1,13 @@
+{
+    "properties": {
+        "a": {
+            "title": "A",
+            "type": "integer"
+        }
+    },
+    "required": [
+        "a"
+    ],
+    "title": "IntOnly",
+    "type": "object"
+}

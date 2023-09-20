@@ -1,0 +1,14 @@
+{
+    "properties": {
+        "a": {
+            "format": "date-time",
+            "title": "A",
+            "type": "string"
+        }
+    },
+    "required": [
+        "a"
+    ],
+    "title": "DateTimeOnly",
+    "type": "object"
+}

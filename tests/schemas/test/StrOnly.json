@@ -1,0 +1,13 @@
+{
+    "properties": {
+        "a": {
+            "title": "A",
+            "type": "string"
+        }
+    },
+    "required": [
+        "a"
+    ],
+    "title": "StrOnly",
+    "type": "object"
+}

@@ -8,7 +8,7 @@ Check one JSONSchema is a subset of another. Plays nicely with `Pydantic`.
 pip install isjsonschemasubset
 ```
 
-_Currently in an Alpha._
+_Currently in Alpha._
 
 # Usage
 

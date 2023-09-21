@@ -10,46 +10,45 @@ import pydantic
 
 
 class Base(pydantic.BaseModel):
-    model_config = pydantic.ConfigDict(extra="forbid")
     title: str = ""
     description: str = ""
 
 
 class Null(Base):
-    type: L["null"]  # noqa: F821
+    type: L["null"]
 
 
 class Boolean(Base):
-    type: L["boolean"]  # noqa: F821
+    type: L["boolean"]
     default: bool | None = None
 
 
 class Integer(Base):
-    type: L["integer"]  # noqa: F821
+    type: L["integer"]
     enum: list[int] | None = None
     default: int | None = None
 
 
 class Number(Base):
-    type: L["number"]  # noqa: F821
+    type: L["number"]
     enum: list[float] | None = None
     default: float | None = None
 
 
 class String(Base):
-    type: L["string"]  # noqa: F821
+    type: L["string"]
     enum: list[str] | None = None
     format: str | None = None
     default: str | None = None
 
 
 class Array(Base):
-    type: L["array"]  # noqa: F821
+    type: L["array"]
     items: "Value"
 
 
 class Object(Base):
-    type: L["object"]  # noqa: F821
+    type: L["object"]
     properties: dict[str, "Value"] = pydantic.Field(default_factory=dict)
     required: list[str] = pydantic.Field(default_factory=list)
 
@@ -84,7 +83,7 @@ Value = Null | Boolean | Integer | Number | String | Array | Object | AllOf | An
 
 
 class JSONSchema(pydantic.BaseModel):
-    type: L["object"]  # noqa: F821
+    type: L["object"]
     title: str
     definitions: dict[str, Value] = pydantic.Field(
         default_factory=dict,

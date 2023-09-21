@@ -3,7 +3,6 @@ autoflake==2.2.1
 black==23.9.1
 click==8.1.7
 iniconfig==2.0.0
--e git+ssh://git@github.com/leontrolski/isjsonschemasubset.git@87ba1dd99a2c128bde8304b67f3b87be4f86686e#egg=isjsonschemasubset
 mypy==1.5.1
 mypy-extensions==1.0.0
 packaging==23.1
@@ -15,3 +14,4 @@ pydantic_core==2.6.3
 pyflakes==3.1.0
 pytest==7.4.2
 typing_extensions==4.8.0
+-e .

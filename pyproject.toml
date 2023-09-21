@@ -1,6 +1,6 @@
 [project]
 name = "isjsonschemasubset"
-version = "0.0.1"
+version = "0.0.2"
 description = "Check one JSON schema is a subset of another"
 readme = "README.md"
 requires-python = ">=3.11"

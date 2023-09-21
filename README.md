@@ -1,12 +1,14 @@
 # `isjsonschemasubset`
 
-Check one JSON schema is a subset of another. Plays nicely with `Pydantic`.
+Check one JSONSchema is a subset of another. Plays nicely with `Pydantic`.
 
 # Install
 
 ```bash
 pip install isjsonschemasubset
 ```
+
+_Currently in an Alpha._
 
 # Usage
 
